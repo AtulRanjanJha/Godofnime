@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useToast } from '@/components/ui/use-toast';
@@ -23,7 +24,7 @@ export const useWatchPageState = (
   const updateUrlParams = (season: number, episode: number) => {
     navigate(`/watch/${animeId}?season=${season}&episode=${episode}`, { replace: true });
   };
-
+  
   // Get available seasons from the anime data
   const getAvailableSeasons = () => {
     if (!anime) return [];
@@ -48,7 +49,7 @@ export const useWatchPageState = (
     // If we can't determine, default to season 1
     return [1];
   };
-
+  
   // Get the actual episode count for a given season
   const getEpisodeCountForSeason = (seasonNumber: number) => {
     if (!anime) return 1;
