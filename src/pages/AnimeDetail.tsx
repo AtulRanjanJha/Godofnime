@@ -27,7 +27,7 @@ const AnimeDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
-  
+
   useEffect(() => {
     console.log('Anime data:', anime);
   }, [anime]);
@@ -120,4 +120,3 @@ const AnimeDetail = () => {
 };
 
 export default AnimeDetail;
-
