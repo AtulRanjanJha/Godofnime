@@ -52,16 +52,16 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "378064": { 1: { 1: { id: "1nYiP5L4hwxvugrVX-WdSvABPsnw2Vs5i", isDrive: true }, }, },// A Silent Voice
   "372058": {1: { 1: { id: "1Y7TMKubKyFOXF5xiPmD16t8MyTgkMvCq", isDrive: true }, }, },// Your Name 
   "667520": { 1: { 1: { id: "14xgtp5h0ND6yKDU7t1NEqt7rSvX5Y9WU", isDrive: true }, }, }, // A Whisker Away
-  "12477": { 1: { 1: { id: "1JJUYqLr7C7owUW2p-oIUTVFzpP6Ylofv", isDrive: true }, }, }, // Grave of the Fireflies
-  "4935": { 1: { 1: { id: "15AI9NkGv55Hoz2K4A_xIN1rwJayJfO52", isDrive: true }, }, }, // Howl's Moving Castle
+  "12477": { 1: { 1: { id: "1lVzMdbs1sDAVsImQWK2529hjvNFvSQrs", isDrive: true }, }, }, // Grave of the Fireflies
+  "4935": { 1: { 1: { id: "13HNdUFE_rFed6IOH3FinMuD29GyfB-EM", isDrive: true }, }, }, // Howl's Moving Castle
   "504253": { 1: { 1: { id: "15peRFCblKPXVDq_sIHV3Dhkl8mr9vLwX", isDrive: true }, }, }, // I Want to Eat Your Pancreas
   "652837": { 1: { 1: { id: "14ZukJ9TsC01nVD2oDGHZrkRYqxaGBTqy", isDrive: true }, }, }, // Josee, the Tiger and the Fish
-  "4977": { 1: { 1: { id: "15E2aRUt2Y8ILG-ThHEtrklvFuOG92azk", isDrive: true }, }, }, // Paprika
+  "4977": { 1: { 1: { id: "1WxYXsHwbSyf2-iSUaJ9dTcpuEX2irVGo", isDrive: true }, }, }, // Paprika
   "129": { 1: { 1: { id: "1j-Rh2Def6ASL9-Iz6fF5YGY5zAXcrplP", isDrive: true }, }, }, // Spirited Away
   "198375": { 1: { 1: { id: "12uJrcEZ0jz4DzfdrvjbXU0z7o-1Iaft0", isDrive: true }, }, }, // The Garden of Words
-  "38142": { 1: { 1: { id: "15BLN_gJUaB2h4f7bFh9ZlnFPE3Zw4MEJ", isDrive: true }, }, }, // 5 Centimeters per Second
-  "51739": { 1: { 1: { id: "15Xn6w762qop62m2nm1B08Bk_0B5kO_mG", isDrive: true }, }, }, // The Secret World of Arrietty
-  "110420": { 1: { 1: { id: "15ReuW1k0ZS8fG2Lj311HH3INR75A5-IF", isDrive: true }, }, }, // Wolf Children
+  "38142": { 1: { 1: { id: "1Tzwu4xpyygiye-op71pmN3IYX80dRSSI", isDrive: true }, }, }, // 5 Centimeters per Second
+  "51739": { 1: { 1: { id: "1wgYp1ciZnnyv3FJyAXifo4OIpDqf-nM3", isDrive: true }, }, }, // The Secret World of Arrietty
+  "110420": { 1: { 1: { id: "1FKHLdsOXEoArhhNcyVJnht-EaPshrk2N", isDrive: true }, }, }, // Wolf Children
   "372058": { 1: { 1: { id: "1Y7TMKubKyFOXF5xiPmD16t8MyTgkMvCq", isDrive: true }, }, }, // Your Name
   "1231574": { 1: { 1: { id: "14uRDrqOvX8SDrdbueoqo5tA5wwnFShtu", isDrive: true }, }, },  // My Oni Girl
   "1297763": { 1: { 1: { id: "189PmHXrfBt5FcZ2fgERP2RAE74opjrAM", isDrive: true }, }, },   // Batman Ninja vs. Yakuza League
