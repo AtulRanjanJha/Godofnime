@@ -41,7 +41,7 @@ export const fetchFromTMDB = async <T>(endpoint: string, params: Record<string, 
     const response = await fetch(url);
     
     if (!response.ok) {
-      throw new Error(`TMDB API Error: ${response.status} - ${response.statusText}`);
+      throw new Error(`TMDB API Error: ${response.status}`);
     }
     
     return await response.json();
