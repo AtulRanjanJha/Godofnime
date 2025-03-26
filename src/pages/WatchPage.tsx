@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { useAnimeDetails, useAnimeVideo } from '@/hooks/useAnime';
@@ -21,9 +20,10 @@ const WatchPage = () => {
   const queryParams = new URLSearchParams(location.search);
   const episodeParam = queryParams.get('episode');
   const seasonParam = queryParams.get('season');
+  const mediaType = queryParams.get('type') || 'tv'; // Default to 'tv' if not specified
   
   const animeId = parseInt(id || '0');
-  const { data: anime, isLoading: isLoadingAnime, error } = useAnimeDetails(animeId);
+  const { data: anime, isLoading: isLoadingAnime, error } = useAnimeDetails(animeId, mediaType);
   
   // Only set initial values after anime data is loaded to avoid invalid season/episode combinations
   const [currentSeason, setCurrentSeason] = useState<number | null>(null);
@@ -127,7 +127,7 @@ const WatchPage = () => {
     // If we can't determine, default to season 1
     return [1];
   };
-  
+
   // Get the actual episode count for a given season
   const getEpisodeCountForSeason = (seasonNumber: number) => {
     if (!anime) return 1;
@@ -149,17 +149,17 @@ const WatchPage = () => {
     // Default to 1 episode if we can't determine the count
     return 1;
   };
-  
+
   const updateUrlParams = (season: number, episode: number) => {
-    navigate(`/watch/${animeId}?season=${season}&episode=${episode}`, { replace: true });
+    navigate(`/watch/${animeId}?season=${season}&episode=${episode}&type=${mediaType}`, { replace: true }); // Pass mediaType in URL
   };
-  
+
   // Get total episodes for the current season
   const totalEpisodes = currentSeason ? getEpisodeCountForSeason(currentSeason) : 0;
   
   // Get available seasons
   const availableSeasons = getAvailableSeasons();
-  
+
   // Use the hook to get the video ID only when we have valid season and episode
   const { data: videoData, isLoading: isLoadingVideo } = useAnimeVideo(
     animeId,
