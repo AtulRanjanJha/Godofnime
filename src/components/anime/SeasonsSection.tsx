@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,7 +10,7 @@ interface SeasonsSectionProps {
 }
 
 const SeasonsSection: React.FC<SeasonsSectionProps> = ({ anime, onSeasonClick }) => {
-  if (!anime.seasons || anime.seasons.length === 0) return null;
+  if (!anime.seasons || anime.seasons.length === 0) return <div>No seasons information available.</div>;
 
   return (
     <div className="mb-8">
