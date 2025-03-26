@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { User } from 'lucide-react';
 import { getImageUrl } from '@/lib/api';
@@ -8,7 +9,7 @@ interface CastSectionProps {
 }
 
 const CastSection: React.FC<CastSectionProps> = ({ cast }) => {
-  if (cast.length === 0) return <div>No cast information available.</div>;
+  if (cast.length === 0) return null;
 
   return (
     <div className="mb-8">
