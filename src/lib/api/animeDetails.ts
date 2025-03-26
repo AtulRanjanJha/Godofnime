@@ -1,87 +1,130 @@
-
 import { AnimeDetail } from "@/types/anime";
 import { fetchFromTMDB } from "./core";
 
 // Get anime details
 export const getAnimeDetails = async (id: number, mediaType?: string) => {
-  // If media type is not specified, try first as TV show, then as movie
   let details;
-  if (!mediaType) {
-    try {
-      details = await fetchFromTMDB<AnimeDetail>(`/tv/${id}`);
-      mediaType = 'tv';
-    } catch (error) {
-      // If not found as TV show, try as movie
-      details = await fetchFromTMDB<AnimeDetail>(`/movie/${id}`);
-      mediaType = 'movie';
-    }
-  } else {
-    details = await fetchFromTMDB<AnimeDetail>(`/${mediaType}/${id}`);
-  }
+  let credits;
+  let resolvedMediaType = mediaType;
   
-  // Fetch cast information
-  const credits = await fetchFromTMDB(`/${mediaType}/${id}/credits`);
-  
-  // Make sure the anime is Japanese (has 'ja' as original language)
-  if (details.original_language !== 'ja') {
-    throw new Error("This content is not an anime");
-  }
-  
-  // Return combined data
-  return {
-    ...details,
-    credits
-  };
-};
-
-// Mapping of anime IDs to their correct season and episode counts
-// This helps override incorrect data from the API
-export const animeCorrections: Record<string, { seasons: number, episodesPerSeason: Record<number, number> }> = {
-  // Solo Leveling (ID: 127532) - Has 1 season with 13 episodes
-  "127532": {
-    seasons: 1,
-    episodesPerSeason: { 1: 13 }
-  },
-  // Rascal Does Not Dream of a Dreaming Girl (ID depends on exact mapping)
-  "93290": {
-    seasons: 1,
-    episodesPerSeason: { 1: 13 }
-  },
-  // Add more anime corrections as needed
-};
-
-// Enhanced function to get details for an anime with correct season/episode info
-export const getAnimeDetailsCorrected = async (id: number, mediaType?: string) => {
-  const details = await getAnimeDetails(id, mediaType);
-  const animeIdString = id.toString();
-  
-  // Apply corrections if we have them for this anime
-  if (animeCorrections[animeIdString]) {
-    const correction = animeCorrections[animeIdString];
-    
-    // Override seasons data if needed
-    if (correction.seasons && correction.seasons > 0) {
-      // Create corrected seasons array
-      details.seasons = Array.from({ length: correction.seasons }, (_, i) => {
-        const seasonNumber = i + 1;
-        return {
-          id: seasonNumber,
-          name: `Season ${seasonNumber}`,
-          overview: "",
-          air_date: details.first_air_date || "",
-          episode_count: correction.episodesPerSeason[seasonNumber] || 1,
+  try {
+    if (!mediaType) {
+      try {
+        // Try as TV show first
+        details = await fetchFromTMDB<AnimeDetail>(`/tv/${id}`);
+        credits = await fetchFromTMDB(`/tv/${id}/credits`);
+        resolvedMediaType = 'tv';
+      } catch (tvError) {
+        // Fallback to movie if TV fails
+        details = await fetchFromTMDB<AnimeDetail>(`/movie/${id}`);
+        credits = await fetchFromTMDB(`/movie/${id}/credits`);
+        resolvedMediaType = 'movie';
+        
+        // Force movie structure
+        details.seasons = [{
+          id: 1,
+          name: 'Movie',
+          overview: details.overview,
+          air_date: details.release_date,
+          episode_count: 1,
           poster_path: details.poster_path,
-          season_number: seasonNumber
-        };
-      });
-      
-      // Update number_of_seasons
-      details.number_of_seasons = correction.seasons;
-      
-      // If this is a single season anime, also update number_of_episodes
-      if (correction.seasons === 1 && correction.episodesPerSeason[1]) {
-        details.number_of_episodes = correction.episodesPerSeason[1];
+          season_number: 1
+        }];
+        details.number_of_seasons = 1;
+        details.number_of_episodes = 1;
       }
+    } else {
+      // Direct fetch if mediaType specified
+      details = await fetchFromTMDB<AnimeDetail>(`/${mediaType}/${id}`);
+      credits = await fetchFromTMDB(`/${mediaType}/${id}/credits`);
+      resolvedMediaType = mediaType;
+      
+      // Special handling for known movies
+      if (mediaType === 'movie') {
+        details.seasons = [{
+          id: 1,
+          name: 'Movie',
+          episode_count: 1,
+          season_number: 1,
+          poster_path: details.poster_path,
+          air_date: details.release_date
+        }];
+        details.number_of_seasons = 1;
+        details.number_of_episodes = 1;
+      }
+    }
+
+    // Verify it's anime (Japanese origin)
+    if (details.original_language !== 'ja') {
+      throw new Error("This content is not an anime");
+    }
+
+    return {
+      ...details,
+      credits,
+      media_type: resolvedMediaType // Add media type to response
+    };
+    
+  } catch (error) {
+    console.error(`Failed fetching details for ID ${id}:`, error);
+    throw error;
+  }
+};
+
+// Special cases that need correction
+export const animeCorrections: Record<string, { 
+  mediaType?: 'tv' | 'movie';
+  seasons?: number;
+  episodesPerSeason?: Record<number, number>;
+}> = {
+  // Movies
+  "129": { mediaType: 'movie' }, // Spirited Away
+  "4977": { mediaType: 'movie' }, // Paprika
+  "378064": { mediaType: 'movie' }, // A Silent Voice
+  "372058": { mediaType: 'movie' }, // Your Name
+  
+  // TV Shows
+  "127532": { // Solo Leveling
+    mediaType: 'tv',
+    seasons: 1,
+    episodesPerSeason: { 1: 13 }
+  },
+  "93290": { // Rascal Does Not Dream
+    mediaType: 'tv',
+    seasons: 1,
+    episodesPerSeason: { 1: 13 }
+  },
+};
+
+// Enhanced function with corrections
+export const getAnimeDetailsCorrected = async (id: number, mediaType?: string) => {
+  const animeIdString = id.toString();
+  const correction = animeCorrections[animeIdString];
+  
+  // Use corrected mediaType if specified
+  const resolvedMediaType = correction?.mediaType || mediaType;
+  
+  const details = await getAnimeDetails(id, resolvedMediaType);
+  
+  // Apply other corrections if needed
+  if (correction?.seasons) {
+    details.seasons = Array.from({ length: correction.seasons }, (_, i) => {
+      const seasonNumber = i + 1;
+      return {
+        id: seasonNumber,
+        name: `Season ${seasonNumber}`,
+        overview: "",
+        air_date: details.first_air_date || details.release_date || "",
+        episode_count: correction.episodesPerSeason?.[seasonNumber] || 1,
+        poster_path: details.poster_path,
+        season_number: seasonNumber
+      };
+    });
+    
+    details.number_of_seasons = correction.seasons;
+    
+    if (correction.seasons === 1 && correction.episodesPerSeason?.[1]) {
+      details.number_of_episodes = correction.episodesPerSeason[1];
     }
   }
   
