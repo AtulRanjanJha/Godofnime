@@ -79,7 +79,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   }, // Grave of the Fireflies
   "4935": { 
     1: { 
-      1: { id: "1vUf9AvPHC-kdJ42kiN87JLvJ0f1aAXqQ", isDrive: true }, 
+      1: { id: "1GBTdFCXzj7o91gDYNaYFDR1bkgduqCxw", isDrive: true }, 
     }, 
   }, // Howl's Moving Castle
   "504253": { 
@@ -94,7 +94,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   }, // Josee, the Tiger and the Fish
   "4977": { 1:
     { 
-      1: { id: "1WxYXsHwbSyf2-iSUaJ9dTcpuEX2irVGo", isDrive: true },
+      1: { id: "12K1uMlQBBKR2ZyvHzOJohFCrYa7XxAb0", isDrive: true },
     }, 
   }, // Paprika
   "129": { 
