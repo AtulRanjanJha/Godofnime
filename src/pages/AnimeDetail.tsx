@@ -28,6 +28,10 @@ const AnimeDetail = () => {
     window.scrollTo(0, 0);
   }, [id]);
   
+  useEffect(() => {
+    console.log('Anime data:', anime);
+  }, [anime]);
+  
   const handleSeasonClick = (seasonNumber: number) => {
     navigate(`/watch/${animeId}?season=${seasonNumber}&episode=1&type=${mediaType}`); // Pass mediaType to the watch page
   };
@@ -116,3 +120,4 @@ const AnimeDetail = () => {
 };
 
 export default AnimeDetail;
+
