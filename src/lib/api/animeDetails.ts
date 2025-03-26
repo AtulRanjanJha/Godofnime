@@ -10,14 +10,17 @@ export const getAnimeDetails = async (id: number, mediaType?: string) => {
   try {
     if (!mediaType) {
       try {
+        // Try as TV show first
         details = await fetchFromTMDB<AnimeDetail>(`/tv/${id}`);
         credits = await fetchFromTMDB(`/tv/${id}/credits`);
         resolvedMediaType = 'tv';
       } catch (tvError) {
+        // Fallback to movie if TV fails
         details = await fetchFromTMDB<AnimeDetail>(`/movie/${id}`);
         credits = await fetchFromTMDB(`/movie/${id}/credits`);
         resolvedMediaType = 'movie';
         
+        // Force movie structure
         details.seasons = [{
           id: 1,
           name: 'Movie',
@@ -31,10 +34,12 @@ export const getAnimeDetails = async (id: number, mediaType?: string) => {
         details.number_of_episodes = 1;
       }
     } else {
+      // Direct fetch if mediaType specified
       details = await fetchFromTMDB<AnimeDetail>(`/${mediaType}/${id}`);
       credits = await fetchFromTMDB(`/${mediaType}/${id}/credits`);
       resolvedMediaType = mediaType;
       
+      // Special handling for known movies
       if (mediaType === 'movie') {
         details.seasons = [{
           id: 1,
@@ -49,15 +54,15 @@ export const getAnimeDetails = async (id: number, mediaType?: string) => {
       }
     }
 
-    // Log a warning instead of throwing an error
+    // Verify it's anime (Japanese origin)
     if (details.original_language !== 'ja') {
-      console.warn(`Content with ID ${id} is not in Japanese. Language: ${details.original_language}`);
+      throw new Error("This content is not an anime");
     }
 
     return {
       ...details,
       credits,
-      media_type: resolvedMediaType
+      media_type: resolvedMediaType // Add media type to response
     };
     
   } catch (error) {
