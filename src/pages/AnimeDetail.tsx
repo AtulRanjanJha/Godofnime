@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import { useAnimeDetails } from '@/hooks/useAnime';
@@ -19,7 +20,7 @@ const AnimeDetail = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const queryParams = new URLSearchParams(location.search);
-  const mediaType = queryParams.get('type') || 'tv'; // Default to 'tv' if not specified
+  const mediaType = queryParams.get('type') || undefined;
   
   const animeId = parseInt(id || '0');
   const { data: anime, isLoading, error } = useAnimeDetails(animeId, mediaType);
@@ -27,13 +28,9 @@ const AnimeDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
-
-  useEffect(() => {
-    console.log('Anime data:', anime);
-  }, [anime]);
   
   const handleSeasonClick = (seasonNumber: number) => {
-    navigate(`/watch/${animeId}?season=${seasonNumber}&episode=1&type=${mediaType}`); // Pass mediaType to the watch page
+    navigate(`/watch/${animeId}?season=${seasonNumber}&episode=1`);
   };
   
   if (isLoading) {
@@ -85,31 +82,26 @@ const AnimeDetail = () => {
       <HeroBackdrop anime={anime} />
       
       <div className="max-w-7xl mx-auto px-4 md:px-10 -mt-20 md:-mt-32 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8">
-          <AnimePoster posterPath={anime?.poster_path} title={title} />
+        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] lg:grid-cols-[300px_1fr] gap-8">
+          <AnimePoster 
+            animeId={animeId} 
+            posterPath={anime.poster_path} 
+            title={title} 
+          />
           
-          <div className="space-y-6">
-            <div>
-              <h1 className="text-3xl md:text-4xl font-bold">{title}</h1>
-              <p className="text-gray-400 mt-2">{anime?.tagline}</p>
-            </div>
-            
+          <div>
             <AnimeInfo anime={anime} />
             
-            <Separator />
-            
-            <DetailsSection anime={anime} />
-            
-            <Separator />
+            <Separator className="my-8" />
             
             <CastSection cast={castMembers} />
             
-            {anime?.seasons && (
-              <>
-                <Separator />
-                <SeasonsSection seasons={anime.seasons} onSeasonClick={handleSeasonClick} />
-              </>
-            )}
+            <SeasonsSection 
+              anime={anime}
+              onSeasonClick={handleSeasonClick}
+            />
+            
+            <DetailsSection anime={anime} />
           </div>
         </div>
       </div>
