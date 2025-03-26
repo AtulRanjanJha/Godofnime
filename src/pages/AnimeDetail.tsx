@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import { useAnimeDetails } from '@/hooks/useAnime';
@@ -28,6 +27,19 @@ const AnimeDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
+
+  // New function to handle watch navigation
+  const handleWatchClick = () => {
+    const isMovie = anime?.media_type === 'movie' || 
+                   (anime?.number_of_seasons === 1 && anime?.number_of_episodes === 1);
+    
+    if (isMovie) {
+      navigate(`/watch/${animeId}?season=1&episode=1`);
+    } else {
+      const firstSeason = anime?.seasons?.[0]?.season_number || 1;
+      navigate(`/watch/${animeId}?season=${firstSeason}&episode=1`);
+    }
+  };
   
   const handleSeasonClick = (seasonNumber: number) => {
     navigate(`/watch/${animeId}?season=${seasonNumber}&episode=1`);
@@ -47,6 +59,7 @@ const AnimeDetail = () => {
               <Skeleton className="h-10 w-3/4" />
               <Skeleton className="h-4 w-1/2" />
               <Skeleton className="h-40 w-full" />
+              <Skeleton className="h-10 w-32 mt-4" /> {/* Watch button skeleton */}
             </div>
           </div>
         </div>
@@ -74,7 +87,9 @@ const AnimeDetail = () => {
   
   const title = anime?.name || anime?.title || '';
   const castMembers = anime?.credits?.cast?.slice(0, 10) || [];
-  
+  const isMovie = anime?.media_type === 'movie' || 
+                 (anime?.number_of_seasons === 1 && anime?.number_of_episodes === 1);
+
   return (
     <div className="min-h-screen pb-0">
       <Navbar />
@@ -90,16 +105,29 @@ const AnimeDetail = () => {
           />
           
           <div>
+            {/* Add Watch Button at the top */}
+            <div className="mb-6">
+              <Button 
+                onClick={handleWatchClick}
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white"
+                size="lg"
+              >
+                {isMovie ? 'Watch Movie' : 'Watch Now'}
+              </Button>
+            </div>
+            
             <AnimeInfo anime={anime} />
             
             <Separator className="my-8" />
             
             <CastSection cast={castMembers} />
             
-            <SeasonsSection 
-              anime={anime}
-              onSeasonClick={handleSeasonClick}
-            />
+            {!isMovie && (
+              <SeasonsSection 
+                anime={anime}
+                onSeasonClick={handleSeasonClick}
+              />
+            )}
             
             <DetailsSection anime={anime} />
           </div>
