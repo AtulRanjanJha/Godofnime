@@ -79,7 +79,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   }, // Grave of the Fireflies
   "4935": { 
     1: { 
-      1: { id: "13HNdUFE_rFed6IOH3FinMuD29GyfB-EM", isDrive: true }, 
+      1: { id: "1vUf9AvPHC-kdJ42kiN87JLvJ0f1aAXqQ", isDrive: true }, 
     }, 
   }, // Howl's Moving Castle
   "504253": { 
@@ -99,7 +99,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   }, // Paprika
   "129": { 
     1: { 
-      1: { id: "1j-Rh2Def6ASL9-Iz6fF5YGY5zAXcrplP", isDrive: true },
+      1: { id: "1VlXjy5VIz3EjXqmxC50zngdHoQKTI3ZX", isDrive: true },
     }, 
   }, // Spirited Away
   "198375": { 
