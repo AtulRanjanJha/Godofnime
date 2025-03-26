@@ -72,16 +72,6 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       1: { id: "14xgtp5h0ND6yKDU7t1NEqt7rSvX5Y9WU", isDrive: true }, 
     }, 
   }, // A Whisker Away
-  "12477": { 
-    1: {
-      1: { id: "1lVzMdbs1sDAVsImQWK2529hjvNFvSQrs", isDrive: true }, 
-    }, 
-  }, // Grave of the Fireflies
-  "4935": { 
-    1: { 
-      1: { id: "1GBTdFCXzj7o91gDYNaYFDR1bkgduqCxw", isDrive: true }, 
-    }, 
-  }, // Howl's Moving Castle
   "504253": { 
     1: { 
       1: { id: "15peRFCblKPXVDq_sIHV3Dhkl8mr9vLwX", isDrive: true },
@@ -92,36 +82,11 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       1: { id: "14ZukJ9TsC01nVD2oDGHZrkRYqxaGBTqy", isDrive: true },
     },
   }, // Josee, the Tiger and the Fish
-  "4977": { 1:
-    { 
-      1: { id: "12K1uMlQBBKR2ZyvHzOJohFCrYa7XxAb0", isDrive: true },
-    }, 
-  }, // Paprika
-  "129": { 
-    1: { 
-      1: { id: "1VlXjy5VIz3EjXqmxC50zngdHoQKTI3ZX", isDrive: true },
-    }, 
-  }, // Spirited Away
   "198375": { 
     1: { 
       1: { id: "12uJrcEZ0jz4DzfdrvjbXU0z7o-1Iaft0", isDrive: true }, 
     }, 
   }, // The Garden of Words
-  "38142": { 
-    1: { 
-      1: { id: "1Tzwu4xpyygiye-op71pmN3IYX80dRSSI", isDrive: true },
-    }, 
-  }, // 5 Centimeters per Second
-  "51739": {
-    1: { 
-      1: { id: "1wgYp1ciZnnyv3FJyAXifo4OIpDqf-nM3", isDrive: true }, 
-    }, 
-  }, // The Secret World of Arrietty
-  "110420": { 
-    1: { 
-      1: { id: "1FKHLdsOXEoArhhNcyVJnht-EaPshrk2N", isDrive: true }, 
-    }, 
-  }, // Wolf Children
   "372058": { 
     1: { 
       1: { id: "1Y7TMKubKyFOXF5xiPmD16t8MyTgkMvCq", isDrive: true },
