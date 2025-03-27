@@ -50,7 +50,9 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       7: { id: "12I3qeEIXo2Hjn53Awl8HOpvNFQzvXkTF", isDrive: true },
       8: { id: "12DMUUNFZZQEL8T2bZL-SA6vwVZZnR3sS", isDrive: true },
       9: { id: "124CQRm-qcHXjsJcou5Sx-FMf5X0mKold", isDrive: true },
-      10: { id: "12bwYMNROdWnaSsAahmolh0Uq6INcDB1b", isDrive: true }
+      10: { id: "12bwYMNROdWnaSsAahmolh0Uq6INcDB1b", isDrive: true },
+      11: { id: "1HUcC6i3MyrdB9RUnEZv3xfWNFzE2kCVA", isDrive: true },
+
     },
   },
 
@@ -86,7 +88,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   }, 
   "198375": { // The Garden of Words
     1: { 
-      1: { id: "12uJrcEZ0jz4DzfdrvjbXU0z7o-1Iaft0", isDrive: true }, 
+      1: { id: "1JaYtxlIEd9q2Wkzreh30Haywacm6cWt7", isDrive: true }, 
     }, 
   }, 
   "1231574": { // My Oni Girl
@@ -294,6 +296,49 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       25: { id: "1Gv__tZ5u-zyPrA0zhvS_puW5Lya9_8uy", isDrive: true },
       26: { id: "1GxO3RlE99b3nSZwKetw4_wdgGI2KM_00", isDrive: true },
     },
+  },
+  "76121":{ // darling of the fanxx
+     1: {
+       1: { id: "1E5YfN8koIao_yYAoGC_BWvbxFuD98xWI", isDrive: true },
+       2: { id: "1E75UxbjRKyT7SOXARR2Iut54uWgcBqIp", isDrive: true },
+       3: { id: "1E8AHvKDw7KfXRnV-YZZ4ltAVeiZrHCHZ", isDrive: true },
+       4: { id: "1H6MW2wgRDoe0D6_V-1PILSGLtxfMdmRQ", isDrive: true },
+       5: { id: "1H8d7yKxYZKjNuXSP0Bnf5D1idNrpejoF", isDrive: true },
+       6: { id: "1H9eMT8ifJy_PppZugi0G6QBQ8LAjWt0-", isDrive: true },
+       7: { id: "1H_A4jnoUxJaRVkem9kpJWXWJl8KfznBW", isDrive: true },
+       8: { id: "1HBP9fmMW67tRSwVxWyKR5r9LyO4rJYT8", isDrive: true },
+       9: { id: "1HCKNspIYfCUSlQaZUc4MCrHduMk3MQHB", isDrive: true },
+       10: { id: "1HD9utAcGu6v-Wn4Ru5cNEBirrymGcsxl", isDrive: true },
+       11: { id: "1HPJMJP7Myt01QypPqSlwxB0SttBXkFrS", isDrive: true },
+       12: { id: "1HPYcTm6Xycru8oOzMfXHT4ekND5inlZL", isDrive: true },
+       13: { id: "1EBgCGfdUIFcQU44-Y1Sk6_O3Qv87dRwM", isDrive: true },
+       14: { id: "1ER5auwjvbpHWbhb3jGDk2lIo9mO2Ji_L", isDrive: true },
+       15: { id: "1GvWfbO_M5_PELhPsXtKEyS3cfuYQDEns", isDrive: true },
+       16: { id: "1GI6dG3YjhSrWEPU83k4TREK6zCG2aJEX", isDrive: true },
+       17: { id: "1GFPg_CE2WR5WGyXeHUvXuhv7nrW_HyaC", isDrive: true },
+       18: { id: "1GEFs8AlaiBE2DIaZ-LsOvOR8QxxvV3FH", isDrive: true },
+       19: { id: "1GBzuvK4h-lGllNpm98D6XCDCYG_VYTWu", isDrive: true },
+       20: { id: "1GBMIHAdJhV9X8a9NOKtrs5oRMybEevMD", isDrive: true },
+       21: { id: "1GI8v0Qq5gI_Q0KWcF5PJGV0qqs-5TM9Z", isDrive: true },
+       22: { id: "1GeUYRRRgK7bPUwQJ0JuS1_0-xJppB32A", isDrive: true },
+       23: { id: "1GwIPdtyujXL0TaatOmZ1vOtFSUV8EHEq", isDrive: true },
+       24: { id: "1H-z_mBafXxK4-8AUTBLsjdf7l3fg7ATK", isDrive: true },
+     },   
+  }, 
+  "508883":{//The_Boy_and_the_Heron
+    1:{
+           1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true },
+      },
+  },
+  "916224":{//suzume no tojomari
+    1:{
+           1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true },
+      },
+  },
+  "877957":{//suzume no tojomari
+    1:{
+           1: { id: "1HcNL2HciJuiSWbHKpu7x2QF2xBkS0NgO", isDrive: true },
+      },
   },
 };
 
