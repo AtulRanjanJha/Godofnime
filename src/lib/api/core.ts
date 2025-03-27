@@ -54,7 +54,7 @@ export const fetchFromTMDB = async <T>(endpoint: string, params: Record<string, 
 // Constants for filtering and searches
 export const POPULAR_ANIME_TITLES = [
   "One Punch Man", 
-  "Solo Leveling"
+  "Solo Leveling",
   "Weathering with You ", 
   "sakamoto days", 
   "Look Back", 
