@@ -69,7 +69,7 @@ export const POPULAR_ANIME_TITLES = [
   "I Want to Eat Your Pancreas", 
   "Josee, the Tiger and the Fish",
   "Batman Ninja vs. Yakuza League",
-  "sakamoto days"
+  "sakamoto days",
   "Violet Evergarden: The Movie",
   "Cowboy Bebop",
   "Death Note",
