@@ -38,6 +38,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       21: { id: "1DwUZpCv0mP5KLdd8rcfe00jmwRVzAknC", isDrive: true },
     },
   },
+  "1357633": {1: {1:{id: "1ETBzaYdT75iUbPoAodXLtNz0WgP-xTLY", isDrive: true},},},  // Solo Levelling reawaekening
   "207332": { // sakamoto days
     1: {
       1: { id: "12W1dYDC9AWxU6RhJ4OOYFkCIM9c7ySHH", isDrive: true },
