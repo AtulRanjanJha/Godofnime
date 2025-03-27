@@ -66,6 +66,8 @@ export const POPULAR_ANIME_TITLES = [
   "Howl's Moving Castle",
   "I Want to Eat Your Pancreas",
   "A Whisker Away",
+  "Kamisama Kiss",
+  "Shinchan",
   "Demon Slayer: Kimetsu no Yaiba",
   "Your Name", 
   "Weathering with You ",
