@@ -88,11 +88,6 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       1: { id: "12uJrcEZ0jz4DzfdrvjbXU0z7o-1Iaft0", isDrive: true }, 
     }, 
   }, // The Garden of Words
-  "372058": { 
-    1: { 
-      1: { id: "1Y7TMKubKyFOXF5xiPmD16t8MyTgkMvCq", isDrive: true },
-    }, 
-  }, // Your Name
   "1231574": { 
     1: { 
       1: { id: "14uRDrqOvX8SDrdbueoqo5tA5wwnFShtu", isDrive: true }, 
