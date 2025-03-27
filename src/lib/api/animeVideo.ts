@@ -34,7 +34,8 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       17: { id: "1FPJ0DM29TF2gTXYznvvgpo1D-lKoi0eQ", isDrive: true },
       18: { id: "1XBXc4JXj_E2GDhFeeldcXZYG5GEWyYky", isDrive: true },
       19: { id: "1sm_zzeQs_bSFCCstuZCwFPsknbpjbHSf", isDrive: true },
-      20: { id: "1cbtHbjxGkDl0PSpwYxNgC2vlXJWHJ7Kc", isDrive: true }
+      20: { id: "1cbtHbjxGkDl0PSpwYxNgC2vlXJWHJ7Kc", isDrive: true },
+      21: { id: "1DwUZpCv0mP5KLdd8rcfe00jmwRVzAknC", isDrive: true },
     },
   },
   "207332": { // sakamoto days
