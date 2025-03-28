@@ -7,8 +7,7 @@ export interface VideoSource {
 
 // Comprehensive video mapping for different animes, seasons, and episodes
 const animeVideoMapping: Record<string, Record<number, Record<number, VideoSource>>> = {
-  // Weathering with You 
-  "568160": { 1: { 1: { id: "1n31X7MsTkLTaUFw7i_VamwI6j5qVnxet", isDrive: true }, }, },
+  
   "127532": { // Solo Levelling 
     1: { 
       1: { id: "19axSY041thDY-n8qlMcAJW2QyPibDPom", isDrive: true },
@@ -34,7 +33,6 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       21: { id: "1DwUZpCv0mP5KLdd8rcfe00jmwRVzAknC", isDrive: true },
     },
   },
-  "1357633": {1: {1:{id: "1ETBzaYdT75iUbPoAodXLtNz0WgP-xTLY", isDrive: true},},},  // Solo Levelling reawaekening
   "207332": { // sakamoto days
     1: {
       1: { id: "12W1dYDC9AWxU6RhJ4OOYFkCIM9c7ySHH", isDrive: true },
@@ -51,83 +49,32 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
 
     },
   },
-
-  "1244492": { // Look Back
-    1: { 
-      1: { id: "1SDmcBaHktPtC8k3Yvw1R-FF5MoMf254t", isDrive: true }, 
-    }, 
-  },
-  "378064": { // A Silent Voice
-    1: { 
-      1: { id: "1nYiP5L4hwxvugrVX-WdSvABPsnw2Vs5i", isDrive: true }, 
-    }, 
-  },
-  "372058": {// Your Name
-    1: { 
-      1: { id: "1Y7TMKubKyFOXF5xiPmD16t8MyTgkMvCq", isDrive: true },
-    },
-  }, 
-  "667520": { // A Whisker Away
-    1: { 
-      1: { id: "14xgtp5h0ND6yKDU7t1NEqt7rSvX5Y9WU", isDrive: true }, 
-    }, 
-  }, 
-  "504253": {  // I Want to Eat Your Pancreas
-    1: { 
-      1: { id: "15peRFCblKPXVDq_sIHV3Dhkl8mr9vLwX", isDrive: true },
-    }, 
-  },
-  "652837": { // Josee, the Tiger and the Fish
-    1: { 
-      1: { id: "14ZukJ9TsC01nVD2oDGHZrkRYqxaGBTqy", isDrive: true },
-    },
-  }, 
-  "198375": { // The Garden of Words
-    1: { 
-      1: { id: "1JaYtxlIEd9q2Wkzreh30Haywacm6cWt7", isDrive: true }, 
-    }, 
-  }, 
-  "1231574": { // My Oni Girl
-    1: { 
-      1: { id: "14uRDrqOvX8SDrdbueoqo5tA5wwnFShtu", isDrive: true }, 
-    }, 
-  },  
-  "1297763": {  // Batman Ninja vs. Yakuza League
-    1: { 
-      1: { id: "189PmHXrfBt5FcZ2fgERP2RAE74opjrAM", isDrive: true }, 
-    }, 
-  },  
-  "533514": { // Violet Evergarden: The Movie
-    1: { 
-      1: { id: "1DR6Sr2NOLXvNRJDPIt-FNEq_zhWEXBdf", isDrive: true }, 
-    }, 
-  }, 
   
   "63926": {//ONE PUNCH MAN
     1: { // Season 1
-      1: { id: "1Jh8EvJ9SuVusLSMxHpSTFazYK2iKXOhx", isDrive: true }, // Episode 1: "The Strongest Man"
-      2: { id: "1dGbQljWbKJYGnSS2GEzO2tcMF0kAJjdt", isDrive: true }, // Episode 2: "The Lone Cyborg"
-      3: { id: "1K6kozbARn66MRG5p50EP8sY-hDpKbJ6I", isDrive: true }, // Episode 3: "The Obsessive Scientist"
-      4: { id: "1UkskHyIG6mmCSX1owfcRlzvBdurmsvDd", isDrive: true }, // Episode 4: "The Modern Ninja"
-      5: { id: "1Dh1bok0oFj33Hs3m62kfzSC7ljcz8Bnm", isDrive: true }, // Episode 5: "The Ultimate Master"
-      6: { id: "1_pEyvm9xXaAoSeO0X0dXcgFswt848Dpl", isDrive: true }, // Episode 6: "The Terrifying City"
-      7: { id: "1YNyyAIpQHyLdHLBQkIpg3LSoRq6skUpb", isDrive: true }, // Episode 7: "The Ultimate Disciple"
-      8: { id: "1xrV8fH2TWIZqG5KX0zy47g6zTizEJ6Lg", isDrive: true }, // Episode 8: "The Deep Sea King"
-      9: { id: "1BEdkNDPZSJxBcmiaAYcK-ZfmB94NxIBc", isDrive: true }, // Episode 9: "Unyielding Justice"
-      10: { id: "1b2s_9IcKMM1URbeH_ltyKReolNr37LZ3", isDrive: true }, // Episode 10: "Unparalleled Peril"
-      11: { id: "1EY5rcmkqbCcpHLeuVMGnzqCxMry8RxVM", isDrive: true }, // Episode 11: "The Dominator of the Universe"
-      12: { id: "1A5OFrjJLqcwMzjxtocd9Bqp0-34ksSWH", isDrive: true }, // Episode 12: "The Strongest Hero"
+      1: { id: "1Jh8EvJ9SuVusLSMxHpSTFazYK2iKXOhx", isDrive: true }, 
+      2: { id: "1dGbQljWbKJYGnSS2GEzO2tcMF0kAJjdt", isDrive: true }, 
+      3: { id: "1K6kozbARn66MRG5p50EP8sY-hDpKbJ6I", isDrive: true }, 
+      4: { id: "1UkskHyIG6mmCSX1owfcRlzvBdurmsvDd", isDrive: true },
+      5: { id: "1Dh1bok0oFj33Hs3m62kfzSC7ljcz8Bnm", isDrive: true }, 
+      6: { id: "1_pEyvm9xXaAoSeO0X0dXcgFswt848Dpl", isDrive: true }, 
+      7: { id: "1YNyyAIpQHyLdHLBQkIpg3LSoRq6skUpb", isDrive: true },
+      8: { id: "1xrV8fH2TWIZqG5KX0zy47g6zTizEJ6Lg", isDrive: true }, 
+      9: { id: "1BEdkNDPZSJxBcmiaAYcK-ZfmB94NxIBc", isDrive: true }, 
+      10: { id: "1b2s_9IcKMM1URbeH_ltyKReolNr37LZ3", isDrive: true },
+      11: { id: "1EY5rcmkqbCcpHLeuVMGnzqCxMry8RxVM", isDrive: true },
+      12: { id: "1A5OFrjJLqcwMzjxtocd9Bqp0-34ksSWH", isDrive: true },
     },
     2: { // Season 2
-      1: { id: "1kysu3t40aNHybFugWCZ5WRRQGXIGUbTX", isDrive: true }, // Episode 1: "Return of the Hero"
-      2: { id: "1XBGN6TX0HkrZFNhqYldPQCP1ZieKnszN", isDrive: true }, // Episode 2: "Human Monster"
-      3: { id: "1ZwTqWSeWo7GLIK_Nn61hv9jIqCbvjkdp", isDrive: true }, // Episode 3: "The Hunt Begins"
-      4: { id: "1vKmobKZpJmn1w6VaSJJ41Q8b9sEI4wAd", isDrive: true }, // Episode 4: "Metal Bat"
+      1: { id: "1kysu3t40aNHybFugWCZ5WRRQGXIGUbTX", isDrive: true }, 
+      2: { id: "1XBGN6TX0HkrZFNhqYldPQCP1ZieKnszN", isDrive: true }, 
+      3: { id: "1ZwTqWSeWo7GLIK_Nn61hv9jIqCbvjkdp", isDrive: true },
+      4: { id: "1vKmobKZpJmn1w6VaSJJ41Q8b9sEI4wAd", isDrive: true }, 
       
     },
   },
-  // Demon Slayer: Kimetsu no Yaiba
-  "85937": {
+  "1216221": { 1: { 1: { id: "1JCLush8txbeaUnEsSs2gdSNITG7hU1ST", isDrive: true }, }, }, //Demon Slayer: Kimetsu no Yaiba -To the Hashira Training
+  "85937": {// Demon Slayer: Kimetsu no Yaiba
     1: {
       1: { id: "18n7C1j9Og9hu0qP1IK1CV8tsBm54zFCl", isDrive: true }, 
       2: { id: "18nJpQUmfBk0N0t6j4jc9ipnQPVJmDCeT", isDrive: true }, 
@@ -201,6 +148,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       
     },
   },
+  "810693": { 1: { 1: { id: "1JMHmD61VrXPJ-6nNzq6-uRrXTfmxmSXt", isDrive: true }, }, },//Jujutsu Kaisen 0
   "95479": { // jujutsu kaisen
     1: {
         1: { id: "1CE4mp_RZQza_nv32G2vnbJgrKPHFsc1P", isDrive: true },
@@ -321,21 +269,32 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
        24: { id: "1H-z_mBafXxK4-8AUTBLsjdf7l3fg7ATK", isDrive: true },
      },   
   }, 
-  "508883":{//The_Boy_and_the_Heron
-    1:{
-           1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true },
-      },
-  },
-  "916224":{//suzume no tojomari
-    1:{
-           1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true },
-      },
-  },
-  "877957":{//drifting home
-    1:{
-           1: { id: "1HcNL2HciJuiSWbHKpu7x2QF2xBkS0NgO", isDrive: true },
-      },
-  },
+  "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
+  "916224":{ 1:{ 1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true }, }, },//suzume no tojomari
+  "877957":{ 1:{ 1: { id: "1HcNL2HciJuiSWbHKpu7x2QF2xBkS0NgO", isDrive: true }, }, },//drifting home
+  "1357633": {1: { 1:{ id: "1ETBzaYdT75iUbPoAodXLtNz0WgP-xTLY", isDrive: true}, }, },// Solo Levelling reawaekening
+  "1244492": { 1: { 1: { id: "1SDmcBaHktPtC8k3Yvw1R-FF5MoMf254t", isDrive: true }, }, },// Look Back
+  "378064": { 1: { 1: { id: "1nYiP5L4hwxvugrVX-WdSvABPsnw2Vs5i", isDrive: true }, }, },// A Silent Voice
+  "372058": { 1: { 1: { id: "1Y7TMKubKyFOXF5xiPmD16t8MyTgkMvCq", isDrive: true }, }, }, // Your Name
+  "667520": { 1: { 1: { id: "14xgtp5h0ND6yKDU7t1NEqt7rSvX5Y9WU", isDrive: true }, }, }, // A Whisker Away
+  "504253": { 1: { 1: { id: "15peRFCblKPXVDq_sIHV3Dhkl8mr9vLwX", isDrive: true }, }, },// I Want to Eat Your Pancreas
+  "652837": { 1: { 1: { id: "14ZukJ9TsC01nVD2oDGHZrkRYqxaGBTqy", isDrive: true }, }, },// Josee, the Tiger and the Fish
+  "198375": { 1: { 1: { id: "1JaYtxlIEd9q2Wkzreh30Haywacm6cWt7", isDrive: true }, }, },// The Garden of Words
+  "1231574": { 1: { 1: { id: "14uRDrqOvX8SDrdbueoqo5tA5wwnFShtu", isDrive: true }, }, },// My Oni Girl
+  "1297763": { 1: { 1: { id: "189PmHXrfBt5FcZ2fgERP2RAE74opjrAM", isDrive: true }, }, }, // Batman Ninja vs. Yakuza League
+  "533514": { 1: { 1: { id: "1DR6Sr2NOLXvNRJDPIt-FNEq_zhWEXBdf", isDrive: true }, }, },// Violet Evergarden: The Movie
+  "568160": { 1: { 1: { id: "1n31X7MsTkLTaUFw7i_VamwI6j5qVnxet", isDrive: true }, }, },   // Weathering with You
+
+
+  "430447": { 1: { 1: { id: "1JyHdnn4fbHlXyZdBIYLwmOxWmoZLS5NO", isDrive: true }, }, }, //Mary and the Witch's_Flower
+  "149870": { 1: { 1: { id: "1-OddvJIuLDKShhlCrZzwukaMB7I8vFBS", isDrive: true }, }, },//The Wind Rises
+  "530079": { 1: { 1: { id: "1Jy_0UTtutllNNcK2MnHIDBevZhFMf6MJ", isDrive: true }, }, }, //Ride Your Wave
+  "144288": { 1: { 1: { id: "1-TaO_MIsbeSuwRY8K0WozIhNowSfFWH6", isDrive: true }, }, },//Berserk: The Golden Age Arc III - The Advent
+  "916192": { 1: { 1: { id: "1JUGnCTB4kwg1yA_iEOfum-XrtJrQ9iI9", isDrive: true }, }, },//The Tunnel to Summer, the Exit of Goodbyes
+  "14069": { 1: { 1: { id: "1JnOVNksC-bPniSnCqBOsauh_YaRfn3Hf", isDrive: true }, }, },//The Girl Who Leapt Through Time
+  "378108": { 1: { 1: { id: "", isDrive: true }, }, },//In This Corner of the World
+
+
 };
 
 // Get YouTube or Google Drive video ID for an anime
