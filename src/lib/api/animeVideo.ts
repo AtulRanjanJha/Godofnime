@@ -8,11 +8,7 @@ export interface VideoSource {
 // Comprehensive video mapping for different animes, seasons, and episodes
 const animeVideoMapping: Record<string, Record<number, Record<number, VideoSource>>> = {
   // Weathering with You 
-  "568160": { 
-    1: { 
-      1: { id: "1n31X7MsTkLTaUFw7i_VamwI6j5qVnxet", isDrive: true },
-    }, 
-  },
+  "568160": { 1: { 1: { id: "1n31X7MsTkLTaUFw7i_VamwI6j5qVnxet", isDrive: true }, }, },
   "127532": { // Solo Levelling 
     1: { 
       1: { id: "19axSY041thDY-n8qlMcAJW2QyPibDPom", isDrive: true },
