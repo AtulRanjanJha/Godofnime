@@ -292,7 +292,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "144288": { 1: { 1: { id: "1-TaO_MIsbeSuwRY8K0WozIhNowSfFWH6", isDrive: true }, }, },//Berserk: The Golden Age Arc III - The Advent
   "916192": { 1: { 1: { id: "1JUGnCTB4kwg1yA_iEOfum-XrtJrQ9iI9", isDrive: true }, }, },//The Tunnel to Summer, the Exit of Goodbyes
   "14069": { 1: { 1: { id: "1JnOVNksC-bPniSnCqBOsauh_YaRfn3Hf", isDrive: true }, }, },//The Girl Who Leapt Through Time
-  "378108": { 1: { 1: { id: "", isDrive: true }, }, },//In This Corner of the World
+  "378108": { 1: { 1: { id: "10DY3xyFBSZye9eGcj5Mwt-GsEnNlWUU9", isDrive: true }, }, },//In This Corner of the World
 
 
 };
