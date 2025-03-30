@@ -89,7 +89,7 @@ export const POPULAR_ANIME_TITLES = [
   "Sword Art Online",
   "Black Clover",
   "The Promised Neverland",
-  "Vinland Saga"
+  "Vinland Saga",
   "Grave of the Fireflies",
   "Paprika",
   "Howl's Moving Castle",
