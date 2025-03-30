@@ -61,11 +61,14 @@ export const POPULAR_ANIME_TITLES = [
   "Look Back",
   "The Garden of Words",
   "A Silent Voice: The Movie",
-  "Grave of the Fireflies",
-  "Paprika",
-  "Howl's Moving Castle",
   "I Want to Eat Your Pancreas",
   "A Whisker Away",
+  "Mirai",
+  "Words Bubble Up Like Soda Pop",
+  "The Imaginary",
+  "The Girl Who Leapt Through Time",
+  "The Tunnel to Summer, the Exit of Goodbyes",
+  "In This Corner of the World",
   "Kamisama Kiss",
   "Shinchan",
   "Demon Slayer: Kimetsu no Yaiba",
@@ -87,6 +90,12 @@ export const POPULAR_ANIME_TITLES = [
   "Black Clover",
   "The Promised Neverland",
   "Vinland Saga"
+  "Grave of the Fireflies",
+  "Paprika",
+  "Howl's Moving Castle",
+
+
+
 ];
 
 export {
