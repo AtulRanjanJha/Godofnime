@@ -379,7 +379,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       19: { id: "12G8s0LXg6qmoaCNAvMjVmh0u0KnYI1Wb", isDrive: true },
       20: { id: "12IBkMSgrEIlrf55CPEwh8tG6rFWYR-Go", isDrive: true },
       21: { id: "12Nu3EpD0VFY4CvfNfF6vPOhuPS7d_2KH", isDrive: true },
-      22: { id: "1UOBqMHs36DP4j9Joru1rHKJAmbXT2NXJ", isDrive: true },
+      22: { id: "12XVz3hhE8eT5VHwEgTe50fr6wzs0nl2U", isDrive: true },
     },
   },
 
