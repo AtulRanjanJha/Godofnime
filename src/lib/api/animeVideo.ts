@@ -269,6 +269,24 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
        24: { id: "1H-z_mBafXxK4-8AUTBLsjdf7l3fg7ATK", isDrive: true },
      },   
   }, 
+  "60834":{ // Black bullet
+    1: { 
+      1: { id: "12Zn3EEEZMPGb1_O7BDs1jBDlUbj7srPn", isDrive: true },
+      2: { id: "12fiju9hIInpRO1p8jhqvijsZ2lDBWVv9", isDrive: true }, 
+      3: { id: "12i_XIav9p3UE-owma5OJxKaFU6XqFUL5", isDrive: true }, 
+      4: { id: "12jPSzA8JQW1jnX7YU3b08QnLtj3gfd1D", isDrive: true }, 
+      5: { id: "12miciK8cDdwpgkAvpDxrk4zTZeZ7rgNm", isDrive: true }, 
+      6: { id: "136uQkCdiEbOr6b_Fxe2J9gTX8YkfUswr", isDrive: true }, 
+      7: { id: "13CsrWC4OKRQIEcFGDhGZkQOFXy7kNDNN", isDrive: true }, 
+      8: { id: "13EwXNNdK-x66A3AQtzyZnVKfy6kSWXw-", isDrive: true }, 
+      9: { id: "13ITojMg0p2cvikVaKs-O4CCNfBVuICkt", isDrive: true }, 
+      10: { id: "13Lqy8Ve-o_eCAf2IUBbOcCLtoQHhBY4V", isDrive: true }, 
+      11: { id: "13R_Z4Wgt30pDLLgyGzONo7c_SkZfE85m", isDrive: true }, 
+      12: { id: "13NICQj0I8Ym28wvq3E8MMpB3JEIydqa-", isDrive: true }, 
+      13: { id: "13Pw4ZILrn18XVQLWAODC-2Ol676WHCiR", isDrive: true }, 
+    }, 
+  },
+
   "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
   "916224":{ 1:{ 1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true }, }, },//suzume no tojomari
   "877957":{ 1:{ 1: { id: "1HcNL2HciJuiSWbHKpu7x2QF2xBkS0NgO", isDrive: true }, }, },//drifting home
@@ -284,8 +302,6 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "1297763": { 1: { 1: { id: "189PmHXrfBt5FcZ2fgERP2RAE74opjrAM", isDrive: true }, }, }, // Batman Ninja vs. Yakuza League
   "533514": { 1: { 1: { id: "1DR6Sr2NOLXvNRJDPIt-FNEq_zhWEXBdf", isDrive: true }, }, },// Violet Evergarden: The Movie
   "568160": { 1: { 1: { id: "1n31X7MsTkLTaUFw7i_VamwI6j5qVnxet", isDrive: true }, }, },   // Weathering with You
-
-
   "430447": { 1: { 1: { id: "1JyHdnn4fbHlXyZdBIYLwmOxWmoZLS5NO", isDrive: true }, }, }, //Mary and the Witch's_Flower
   "149870": { 1: { 1: { id: "1-OddvJIuLDKShhlCrZzwukaMB7I8vFBS", isDrive: true }, }, },//The Wind Rises
   "530079": { 1: { 1: { id: "1Jy_0UTtutllNNcK2MnHIDBevZhFMf6MJ", isDrive: true }, }, }, //Ride Your Wave
@@ -293,6 +309,15 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "916192": { 1: { 1: { id: "1JUGnCTB4kwg1yA_iEOfum-XrtJrQ9iI9", isDrive: true }, }, },//The Tunnel to Summer, the Exit of Goodbyes
   "14069": { 1: { 1: { id: "1JnOVNksC-bPniSnCqBOsauh_YaRfn3Hf", isDrive: true }, }, },//The Girl Who Leapt Through Time
   "378108": { 1: { 1: { id: "10DY3xyFBSZye9eGcj5Mwt-GsEnNlWUU9", isDrive: true }, }, },//In This Corner of the World
+  "317442": { 1: { 1: { id: "12RPfAQ_IVxIQzShhp-6wqd4LYXIKYyTl", isDrive: true }, }, },//The Last: Naruto the Movie
+  "": { 1: { 1: { id: "", isDrive: true }, }, },//
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "": { 1: { 1: { id: "", isDrive: true }, }, },
 
 
 };
