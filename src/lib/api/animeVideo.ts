@@ -315,7 +315,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       25: { id: "17JMgpPXm28Eq-S8FbM33J0si3LL86UtL", isDrive: true },
     },
   },
-  "117933":{ //Attack on titan
+  "1429":{ //Attack on titan
     1: {
       1:{id:"106xT4HbJTee-Uum9ulkGHk9UMHC3LC0s", isDrive: true },
       2:{id:"10CHjtXS3_3cuqZy35QbGUlqS0cBGx_fy", isDrive: true },
