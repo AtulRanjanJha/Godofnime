@@ -286,6 +286,36 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       13: { id: "13Pw4ZILrn18XVQLWAODC-2Ol676WHCiR", isDrive: true }, 
     }, 
   },
+  "117933":{ //Summer Time Rendering
+    1: { 
+      1: { id: "153DTsz352Si1BC6mw0tHukk05sX9zk82", isDrive: true },
+      2: { id: "154BacYROHWPmZRw4S0XQl4NwSB76uIFS", isDrive: true },
+      3: { id: "154GHdBocFlduQFjdjTjLbbzPS1udg7E0", isDrive: true },
+      4: { id: "1574qXNHrnQs7_7kBZB3i-r1v179NxzXN", isDrive: true },
+      5: { id: "157Fx4J4NpgutrR--f0MHLvuJlt7XhELA", isDrive: true },
+      6: { id: "15B3IiSrYIui2GqvuRJ3VAg-VRBvD6lwO", isDrive: true },
+      7: { id: "15D7YGLmvC2xnuwgm0qEdzHy1ALT7kkIG", isDrive: true },
+      8: { id: "15LHbDAYWz7kkeQnYy5wIB9g89_jTgo_z", isDrive: true },
+      9: { id: "15PJRSN4eJSI6XPXUsw3AXnRhS2mamTHS", isDrive: true },
+      10: { id: "15Wtpmoa21h6JF7zyXxkER1FNcwrxtv3t", isDrive: true },
+      11: { id: "15XYnBmB73xjs1QCqLuCm24tRe5xPnFkX", isDrive: true },
+      12: { id: "15kn_14U_ZRtRVHvt_YlLTOaixEYV4vZw", isDrive: true },
+      13: { id: "161O-SP-ywuj7SmYtZ4_ocFQU0b1AoiZ-", isDrive: true },
+      14: { id: "1641KPksacUA9kj4OzFSCvconZhml-8Vl", isDrive: true },
+      15: { id: "167h4NqEH_lqohHii-hdFrUY3Ls5gP5bP", isDrive: true },
+      16: { id: "16QCfORyKNVvVji8lEwnFbuq5UcR27ODE", isDrive: true },
+      17: { id: "16SIy1y4VIBn7HIuJ22RD36MhDHhGuWkT", isDrive: true },
+      18: { id: "16aF-GTVMC5uEloXufN9Hrm_Yxw69svmW", isDrive: true },
+      19: { id: "16mOz7kTz90PKubI1pSK2zwa2mj7pGRC1", isDrive: true },
+      20: { id: "17EmTCUhAdYDZQ416VTjHlTSNybAm5dHc", isDrive: true },
+      21: { id: "17F2zRRB5pJMuXB5kIzvJhsoGvZa9r1mo", isDrive: true },
+      22: { id: "17Hw24x2G5UKU8QD649kPBCg4_z8gVbxO", isDrive: true },
+      23: { id: "17IKBJaBeX5knHTsFiCPxWDiCqept_ndA", isDrive: true },
+      24: { id: "17J9xUZr4DhLB3WrEQ9K9pdZnAy7wdMJH", isDrive: true },
+      25: { id: "17JMgpPXm28Eq-S8FbM33J0si3LL86UtL", isDrive: true },
+    },
+  },
+
 
   "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
   "916224":{ 1:{ 1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true }, }, },//suzume no tojomari
@@ -314,10 +344,10 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "475215": { 1: { 1: { id: "17Ni4aPkaSIuU8gYIoQHEus1DQfPBaA6Y", isDrive: true }, }, },//Mirai 
   "514710": { 1: { 1: { id: "17LyM5HnPrPxIrHGZPOjHo3EUMnz1i187", isDrive: true }, }, },//Modest Heroes
   "913001": { 1: { 1: { id: "14zzzc3VgAF3MwQM5ubTQqAeVe_Au3myq", isDrive: true }, }, },//The Imaginary
-  "": { 1: { 1: { id: "", isDrive: true }, }, },
-  "": { 1: { 1: { id: "", isDrive: true }, }, },
-  "": { 1: { 1: { id: "", isDrive: true }, }, },
-  "": { 1: { 1: { id: "", isDrive: true }, }, },
+  "912598": { 1: { 1: { id: "1-0_p7iUvJmOEX3cKAuSihUR58EZWJpXx", isDrive: true }, }, },//Bubble
+  "11299": { 1: { 1: { id: "1-21ZufV8F9qZk552o2oiwQ10rNdw5KqM", isDrive: true }, }, },//Cowboy Bebop: The Movie 
+  "34433": { 1: { 1: { id: "1-JHkkL5YiiS2Q5lzp21AGe_r4-HrwDRq", isDrive: true }, }, },//Dragon Ball Z: Broly - The Legendary Super Saiyan
+  "303857": { 1: { 1: { id: "1-MxB8V8l_M7QGUs3HWtv6zMi7hHNztif", isDrive: true }, }, },//Dragon Ball Z: Resurrection 'F'
 
 
 };
