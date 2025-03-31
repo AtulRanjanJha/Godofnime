@@ -451,7 +451,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "303857": { 1: { 1: { id: "1-MxB8V8l_M7QGUs3HWtv6zMi7hHNztif", isDrive: true }, }, },//Dragon Ball Z: Resurrection 'F'
 
 
-  "492999":{ 1: { 1: { id: "PvvQZInIagQ?si=3MdJvkeEzl1WkPGi", isDrive: false }, }, },//
+  "492999":{ 1: { 1: { id: "PvvQZInIagQ", isDrive: false }, }, },//
 
 };
 
