@@ -450,6 +450,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
   "34433": { 1: { 1: { id: "1-JHkkL5YiiS2Q5lzp21AGe_r4-HrwDRq", isDrive: true }, }, },//Dragon Ball Z: Broly - The Legendary Super Saiyan
   "303857": { 1: { 1: { id: "1-MxB8V8l_M7QGUs3HWtv6zMi7hHNztif", isDrive: true }, }, },//Dragon Ball Z: Resurrection 'F'
 
+  "492999":{ 1: { 1: { id: "PvvQZInIagQ?si=3MdJvkeEzl1WkPGi", isDrive: false }, }, },//
 
 };
 
