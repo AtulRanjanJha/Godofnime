@@ -31,6 +31,7 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       19: { id: "1sm_zzeQs_bSFCCstuZCwFPsknbpjbHSf", isDrive: true },
       20: { id: "1cbtHbjxGkDl0PSpwYxNgC2vlXJWHJ7Kc", isDrive: true },
       21: { id: "1DwUZpCv0mP5KLdd8rcfe00jmwRVzAknC", isDrive: true },
+      22: { id: "1-VXHrTGO3-A-cjUO3PgCo_T3qZJSQxZK", isDrive: true },
     },
   },
   "207332": { // sakamoto days
@@ -415,6 +416,22 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
         28:{id: "1zcL05D3cM2sP1Ng4xLolEUj8m4iquC0A", isDrive: true},
       },
     },
+  },
+  "246029":{ //Viral Hit
+    1:{ 
+      1: { id: "1-XWczxux7xXwCDt4kr19nLAgjaaBnGsA", isDrive: true },
+      2: { id: "1-d5-VzwsPRLGH3fJK4JRy1CmfNghGx9S", isDrive: true }, 
+      3: { id: "1-eYi3X1rtBdiKVAcGRYolojyh5MAQu0g", isDrive: true }, 
+      4: { id: "1-f-8suU0EUtJl6JPPTroY8tmAe0Gckoy", isDrive: true }, 
+      5: { id: "1-gM846vamcTS8VhjfjPJeSIum74xyiqZ", isDrive: true }, 
+      6: { id: "100Nwwld3ptOQ5XOj7LDf_MlKtbjNrGWb", isDrive: true }, 
+      7: { id: "100vo6M0n0p1jSqfdeojX2BUp-FIDBzn-", isDrive: true }, 
+      8: { id: "101S8GCiPoKWuUf2Eyjt_FSBmrb6SLIai", isDrive: true }, 
+      9: { id: "102NImRaVIf2KC-DLzgn81Ighwb7VnMGt", isDrive: true }, 
+      10: { id: "104rxxI-EQyaxYWqEtRBzlP8iURnE06xU", isDrive: true }, 
+      11: { id: "105vmF4Gisu5aa1xDO_OT4CmksxNo-_3M", isDrive: true }, 
+      12: { id: "10ALGCDDDGKEFpt2InC_hGDcMxg9vBZni", isDrive: true }, 
+    }, 
   },
 
 
