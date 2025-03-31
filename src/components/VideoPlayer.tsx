@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -14,14 +13,11 @@ const VideoPlayer = ({ videoId, isOpen, onClose, isDriveLink = false }: VideoPla
   const [isLoading, setIsLoading] = useState(true);
   const [isMounted, setIsMounted] = useState(false);
 
-  // Mount effect
   useEffect(() => {
     if (isOpen) {
       setIsMounted(true);
-      // Start loading indicator
       setIsLoading(true);
     } else {
-      // Delayed unmount for smooth exit animation
       const timer = setTimeout(() => {
         setIsMounted(false);
       }, 300);
@@ -31,10 +27,10 @@ const VideoPlayer = ({ videoId, isOpen, onClose, isDriveLink = false }: VideoPla
 
   if (!isMounted) return null;
 
-  // Generate the appropriate video source URL
+  // YouTube embed URL with parameters to minimize branding and recommendations
   const videoSrc = isDriveLink 
     ? `https://drive.google.com/file/d/${videoId}/preview?usp=sharing&embedded=true&rm=minimal` 
-    : `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&color=white`;
+    : `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&playsinline=1&color=white&enablejsapi=1`;
 
   return (
     <div className={cn(
@@ -71,7 +67,7 @@ const VideoPlayer = ({ videoId, isOpen, onClose, isDriveLink = false }: VideoPla
             )}
             onLoad={() => setIsLoading(false)}
             loading="eager"
-            sandbox={isDriveLink ? "allow-scripts allow-same-origin" : ""}
+            sandbox={isDriveLink ? "allow-scripts allow-same-origin" : "allow-scripts allow-same-origin allow-presentation"}
           ></iframe>
           
           {/* CSS overlay to hide the pop-out button on Google Drive embeds */}
