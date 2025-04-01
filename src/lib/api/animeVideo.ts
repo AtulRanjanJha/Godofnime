@@ -488,7 +488,43 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
         9: { id: "13uZp2prqVyrNG9VDW1C35PBKYNMIUuLI", isDrive: true },      
     },
   },
+  "96316":{ // Rent a girlfriend
+    1:{ 
+      1: { id: "17taujS30pcYGHCNmpVYadqk-Y-cTYJKN", isDrive: true },
+      2: { id: "17u0OnHMD1bZzAa9S9MIK0z-LqMlZxshk", isDrive: true }, 
+      3: { id: "", isDrive: true }, 
+      4: { id: "182I4V7Q9ZngitX_Rxjgamd8Y0oAHYWcb", isDrive: true }, 
+      5: { id: "", isDrive: true }, 
+      6: { id: "", isDrive: true }, 
+      7: { id: "", isDrive: true }, 
+      8: { id: "", isDrive: true }, 
+      9: { id: "", isDrive: true }, 
+      10: { id: "", isDrive: true }, 
+      11: { id: "", isDrive: true }, 
+      12: { id: "", isDrive: true }, 
+      13: { id: "", isDrive: true }, 
+      14: { id: "", isDrive: true }, 
+      15: { id: "", isDrive: true }, 
+      16: { id: "", isDrive: true }, 
+      17: { id: "", isDrive: true }, 
+      18: { id: "", isDrive: true }, 
+      19: { id: "", isDrive: true }, 
+      21: { id: "", isDrive: true }, 
+      22: { id: "", isDrive: true }, 
+      23: { id: "", isDrive: true }, 
+      24: { id: "", isDrive: true }, 
+      25: { id: "", isDrive: true }, 
+      26: { id: "", isDrive: true }, 
+      27: { id: "", isDrive: true }, 
+      28: { id: "", isDrive: true }, 
+      29: { id: "", isDrive: true }, 
+      30: { id: "", isDrive: true }, 
+      1: { id: "", isDrive: true }, 
 
+    }, 
+  },
+
+    
   "149871":{ 1:{ 1: { id: "14o8tRokrucXtdZqiQGBSj8oZPGr3CIdR", isDrive: true }, }, },//The tale of princess kaguya
   "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
   "916224":{ 1:{ 1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true }, }, },//suzume no tojomari
