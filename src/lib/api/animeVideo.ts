@@ -696,7 +696,22 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       46: { id: "1-qBRwxwwAqL0HIqkR6ec7KzpArMms8Fm", isDrive: true }, 
       47: { id: "12ocH8vnMMBMAA-xd5D_rUN2qMhr1mc5C", isDrive: true },
       48: { id: "12xAiEoiCKJ5V40wpgN2OEbX1JppMhsDr", isDrive: true }, 
-
+    }, 
+  },
+  "74185":{ //Girls' Last Tour
+    1:{ 
+      1: { id: "1-yVD8bVi9I5t4USIYGdaHzBc1x4MwX6c", isDrive: true },
+      2: { id: "100s9li5-7DOld7r-6cqXFUj0L1YCo4zb", isDrive: true }, 
+      3: { id: "1098KEp27nEt6uoyOqPnpa5kKGE4Jwc1o", isDrive: true }, 
+      4: { id: "10D6zynIe8Vzjyk6Ie-HYDBpkEsRbu-lw", isDrive: true }, 
+      5: { id: "10GhI4EIU8oaUNLr3adSwWc4RL9cKhN8H", isDrive: true }, 
+      6: { id: "10HQlhfZC0sNufYuXT4nUMykOdSYnM_CF", isDrive: true }, 
+      7: { id: "10I73sLs4sh_i_dY3rFI_1yuVKYRijtWg", isDrive: true }, 
+      8: { id: "10L7QJnjEFrcfNccMLZr11o764bSPcI4_", isDrive: true }, 
+      9: { id: "10L_XitY7WXsnSy5R683pEwmEjajdj5a7", isDrive: true }, 
+      10: { id: "10NvzXw-nIyG4rps6H04qyHJ2Lb3Fwf4P", isDrive: true }, 
+      11: { id: "10VrXlJ-ZHbrnXGKPB6t4LPT_5MkBw5al", isDrive: true }, 
+      12: { id: "10u7V-ASAZAhtipb52mO7RzHo5dVs7ET7", isDrive: true }, 
     }, 
   },
   "149871":{ 1:{ 1: { id: "14o8tRokrucXtdZqiQGBSj8oZPGr3CIdR", isDrive: true }, }, },//The tale of princess kaguya
