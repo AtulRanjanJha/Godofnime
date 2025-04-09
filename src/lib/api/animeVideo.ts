@@ -778,6 +778,23 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       12: { id: "", isDrive: true }, 
     }, 
   },
+  "84669":{//The Quintessential Quintuplets 
+    1:{ 
+      1: { id: "1-0uNTFxBEhYICYz8OXtKqd3njvXoKm0p", isDrive: true },
+      2: { id: "1-6HHRzrM54eiMsMxPCBwAWj2dcKOcl_m", isDrive: true }, 
+      3: { id: "1-BF-ljHn5haUl-YVHyRNCXeFnCBqsWXO", isDrive: true }, 
+      4: { id: "1-BXS4xQihAi0NPo9AQBw5snfzBQ9_2NX", isDrive: true }, 
+      5: { id: "1-GhFX_0uX9Hjw_ngeYwvC1iy_82fWzf1", isDrive: true }, 
+      6: { id: "1-HLZ-7WOyVoRtIO0RXCvRbKLHU3W78BV", isDrive: true },  
+      7: { id: "1-M89WG9Bj4XMBSIEvsJaSJCo9UdoW6lS", isDrive: true }, 
+      8: { id: "1-OdsVx5RMLLosLKIjckRMIZCm2HRq86L", isDrive: true }, 
+      9: { id: "1-QRxA0I6-O7BKjLCdhHSbDkVUjDQzsnl", isDrive: true }, 
+      10: { id: "1-aAkBsSrHWWeMtwwzKqjOgCUmPuYn_iI", isDrive: true }, 
+      11: { id: "1-UMk9cho_bNJBZivLQq9ZOkfGPw-pKHD", isDrive: true }, 
+      12: { id: "1-VsR_xcdNXQXkaB07RowsEWQsy_X6O9k", isDrive: true }, 
+    }, 
+  },
+  
   "149871":{ 1:{ 1: { id: "14o8tRokrucXtdZqiQGBSj8oZPGr3CIdR", isDrive: true }, }, },//The tale of princess kaguya
   "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
   "916224":{ 1:{ 1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true }, }, },//suzume no tojomari
