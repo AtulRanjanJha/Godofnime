@@ -794,6 +794,23 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       12: { id: "1-VsR_xcdNXQXkaB07RowsEWQsy_X6O9k", isDrive: true }, 
     }, 
   },
+  "106519":{ //Higehiro: After Being Rejected, I Shaved and Took in a High School Runaway
+    1:{ 
+      1: { id: "1-g75_tHY4YTiCPOePJSi1FIf3TulWwsL", isDrive: true },
+      2: { id: "1-iVNEbJqZtmTawUmOiADau25hJerAKBK", isDrive: true },
+      3: { id: "1-r_Ac0ddzK74bOJx1OHf5D3bO0_YAdM6", isDrive: true },
+      4: { id: "1-s_ZU_5nuu_n0SVt2xi58FUmyLLyAlW5", isDrive: true },
+      5: { id: "1-ySJQzj5Po2ghg--rCk-jeUXg7feDu1l", isDrive: true },
+      6: { id: "10-MO35Ny_RUO4WjdVpOcoG8sOEOBLRAY", isDrive: true },
+      7: { id: "1089wD-2443C7YttbmbizOytSY9IHzE0H", isDrive: true },
+      8: { id: "10B5Yb6PQrnBEjJLoJQCOcNto6pTDczgU", isDrive: true },
+      9: { id: "10Bcc4gBt-_FjUQS4fICMdGJWZnn2-Oi_", isDrive: true },
+      10: { id: "10E-0AB3UVbeQi4Nl6jfWbAMkRmJpsf0w", isDrive: true },
+      11: { id: "10Ejr0QzzICETV17YYXNwV-9qiFnOKy0O", isDrive: true },
+      12: { id: "10GFpWLtgM5THkcBdJGl10dgwUp0vmebS", isDrive: true },
+      13: { id: "10IBnrJdZ-neYNWZfzLDLQEZ8cpYFzusE", isDrive: true },
+    }, 
+  },
   
   "149871":{ 1:{ 1: { id: "14o8tRokrucXtdZqiQGBSj8oZPGr3CIdR", isDrive: true }, }, },//The tale of princess kaguya
   "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
