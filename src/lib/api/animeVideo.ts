@@ -854,6 +854,11 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       25: { id: "", isDrive: true }, 
     }, 
   },
+  "65942":{ //Re:ZERO -Starting Life in Another World
+    1:{ 
+      1: { id: "1-NuDaKvfy9zNwgnRhvwJYi_m3Gg0WXht", isDrive: true }, 
+    }, 
+  },
   "149871":{ 1:{ 1: { id: "14o8tRokrucXtdZqiQGBSj8oZPGr3CIdR", isDrive: true }, }, },//The tale of princess kaguya
   "508883":{ 1:{ 1: { id: "1I9Y9IyeXg72jR7sz1vg1TvHM64T1K4Z5", isDrive: true }, }, },//The_Boy_and_the_Heron
   "916224":{ 1:{ 1: { id: "1ICJH4RuNY6YLgDjeYI2vS8ixB7Hwhaws", isDrive: true }, }, },//suzume no tojomari
