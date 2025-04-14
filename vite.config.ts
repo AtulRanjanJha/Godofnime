@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     rollupOptions: {
-      external: ["axios"], // Marking axios as external
+      external: ["axios"], // Mark axios as an external dependency
     },
   },
 }));
