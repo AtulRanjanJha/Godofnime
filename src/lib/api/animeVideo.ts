@@ -47,7 +47,6 @@ const animeVideoMapping: Record<string, Record<number, Record<number, VideoSourc
       9: { id: "124CQRm-qcHXjsJcou5Sx-FMf5X0mKold", isDrive: true },
       10: { id: "12bwYMNROdWnaSsAahmolh0Uq6INcDB1b", isDrive: true },
       11: { id: "1HUcC6i3MyrdB9RUnEZv3xfWNFzE2kCVA", isDrive: true },
-
     },
   },
   
