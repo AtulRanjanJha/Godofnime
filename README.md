@@ -6,7 +6,6 @@
 
 There are several ways of editing your application.
 
-
 Follow these steps:
 
 ```sh
